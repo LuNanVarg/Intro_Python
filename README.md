@@ -1,4 +1,5 @@
-# 👩‍💻 Iniciación a la Programación con Python - "Talento Tech"
+# 👩‍💻 Iniciación a la Programación con Python - Talento Tech
+
 ### 🧠 Contenidos Mínimos
 
 Este curso está diseñado de forma progresiva, comenzando por los fundamentos básicos de la programación hasta llegar a la aplicación práctica en proyectos más complejos.
