@@ -3,32 +3,24 @@
 Este es un proyecto de Python con SQLite, que permite administrar clientes y productos commo agregar, modificar, eliminar y mostrar los almacenados en una base de datos.
 
 ## 📁 Estructura del Proyecto
+
+```
 mi_libreria/
 ├── clientes.py           # Lógica para gestionar clientes (alta, baja, modificación)
-|
 ├── productos.py          # Lógica para gestionar productos (categorías, stock, reportes)
-|
 ├── ayuda.py              # Funciones auxiliares o de utilidad (colores, validaciones, etc.)
-|
 ├── main.py               # Menú principal y navegación de opciones
-|
 ├── clientes.json         # Backup o precarga de datos de clientes
-|
 ├── productos.json        # Backup o precarga de datos de productos
-|
 ├── libreria_reg.db       # Base de datos SQLite con tablas: clientes, productos, categorias
-|
 ├── README.md             # Documentación principal del proyecto (explicación general)
-|
 └── docs/                 # Documentación automática generada con Sphinx
-    |
     ├── source/
     │   ├── conf.py       # Configuración de Sphinx
-    |   |
     │   ├── index.rst     # Página principal de documentación
-    |   |
     │   └── *.rst         # Archivos adicionales generados con `sphinx-apidoc`
     └── build/            # Carpeta generada automáticamente con la salida HTML
+```
 
 ## Requisitos
 
