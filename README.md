@@ -106,14 +106,36 @@ Este proyecto fue desarrollado utilizando diversas herramientas y tecnologías:
 - 🎨 Interfaz con colores (Colorama)  
 - 📁 Separación en módulos, ejemplos:(`clientes.py`, `productos.py`, `main.py`)
 
+Además, incorporamos **Sphinx** como herramienta para documentar el proyecto:
 
+- 📚 `Sphinx`: Generador de documentación automática para proyectos en Python
+- 🗂️ `.rst` y `conf.py`: Archivos fuente de la documentación
+- 🌐 `HTML`: Generación de documentación navegable en `docs/build/html`
+
+**La estructura generada incluye:**
+
+```
+docs/
+├── build/          ← Documentación HTML generada
+├── source/         ← Archivos fuente (.rst, conf.py)
+├── index.rst       ← Archivo principal de la documentación
+├── conf.py         ← Configuración de Sphinx
+├── Makefile        ← Script para generar HTML (Linux/macOS)
+└── make.bat        ← Script para generar HTML (Windows)
+```
+
+**Para compilar la documentación:**
+```
+cd docs
+make html  # o make.bat html en Windows
+```
 ---
 
 ## ▶️ Cómo ejecutar
 
 **1. Cloná el repositorio:**
-bash
-```
+
+``` bash
 git clone https://github.com/LuNanVarg/Intro_Python.git
 cd Intro_Python
 ```
@@ -148,7 +170,7 @@ Este proyecto es también un reflejo de mi compromiso con seguir aprendiendo y s
 
 ---
 
-## <picture> <img src="https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/Connect-with-me.gif?raw=true" width="100px"> </picture> 👩‍💻 Autor
+## <img src="https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/Connect-with-me.gif?raw=true" width="100px"> </picture> 👩‍💻 Autor
 <p align="center">
 	<a href="mailto:nancy.vargas.it@gmail.com"><img src="https://img.icons8.com/bubbles/50/000000/gmail.png" alt="Gmail"/></a>
 	<a href="https://github.com/LuNanVarg"><img src="https://img.icons8.com/bubbles/50/000000/github.png" alt="GitHub"/></a>
@@ -174,7 +196,7 @@ Este proyecto es también un reflejo de mi compromiso con seguir aprendiendo y s
 
 ---
 
-🏁 Resultados de Aprendizaje
+## 🏁 Resultados de Aprendizaje
 
 Al finalizar el curso, ya somos capaces de:
 
