@@ -53,26 +53,33 @@ mi_libreria/
 *  Redirige al módulo correspondiente usando match.
 
 2. 👥 `clientes.py`
+   
 **Funciones:**
+
 * `agregar_cliente_sql()`: Alta en BD.
 * `ver_clientes_sql()`: Muestra clientes.
 * `buscar_cliente_por_id()`
 * `eliminar_cliente_por_id()`
 
 **Validaciones:**
+
 * Campos obligatorios.
 * Email válido.
 * Fecha con `datetime`.
 
-📦 `productos.py`
+3. 📦 `productos.py`
+   
 **Funciones:**
+
 * `agregar_producto_sql()`
 * `consultar_productos_sql()`
 * `buscar_producto_por_id()`
 * `actualizar_producto_sql()`
 * `eliminar_producto_sql()`
 * `reporte_stock_bajo()`
+  
 **Validaciones:**
+
 Precio y stock positivos.
 Categoría existente.
 
