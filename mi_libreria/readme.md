@@ -1,6 +1,7 @@
 # 🛍️ Sistema de Inventario y Gestión de Clientes
 
-Este es un proyecto de Python con SQLite, que permite administrar clientes y productos commo agregar, modificar, eliminar y mostrar los almacenados en una base de datos.
+Este es un proyecto de Python con SQLite, que permite administrar clientes y productos:
+agregar, modificar, eliminar y mostrar los datos almacenados en una base de datos.
 
 ## 📁 Estructura del Proyecto
 
@@ -22,65 +23,63 @@ mi_libreria/
     └── build/            # Carpeta generada automáticamente con la salida HTML
 ```
 
-## Requisitos
+## 🧰 Requisitos
 
 - Python 3.x
-- Tkinter (incluido en la instalación estándar de Python)
-- SQLite (incluido en la instalación estándar de Python)
+- `colorama` (para colores en consola)
+- SQLite (incluido en Python estándar)
 
-## Instalación
+## ⚙️ Instalación
 
 1. Clona o descarga este repositorio en tu máquina local.
 2. Asegúrate de tener Python 3.x instalado en tu sistema.
 3. No se requieren pasos de instalación adicionales, ya que el proyecto utiliza bibliotecas estándar de Python.
+4. Ejecutá el proyecto desde terminal con:
+`python main.py`
 
-## ▶️ Cómo Ejecutar
+## ▶️ Cómo usarlo
 
 1. Ejecuta el archivo `main.py` para iniciar la aplicación.
 2. La aplicación abrirá una ventana con las opciones disponibles.
-3. En la pestaña "Agregar Producto", puedes ingresar los detalles del nuevo producto y hacer clic en el botón "Agregar Producto" para agregarlo al inventario.
-4. En la pestaña "Modificar Producto", puedes seleccionar un producto existente de la lista desplegable, modificar sus detalles y hacer clic en el botón "Modificar Producto" para guardar los cambios.
-5. También puedes eliminar productos desde la pestaña "Modificar Producto" seleccionando un producto y haciendo clic en el botón "Eliminar Producto".
-6. El botón "Mostrar Informe" en la ventana principal te permite ver un informe de inventario con detalles de todos los productos almacenados.
+3. La opción "Agregar producto" te permite registrar un nuevo artículo en el inventario, ingresando su nombre, precio, stock y categoría. El sistema valida los datos antes de guardarlos en la base de datos.
+4. Desde la opción "Actualizar producto por ID", podés modificar el nombre, precio o stock de un producto ya registrado, utilizando su identificador único.
+5. Para eliminar un producto del sistema, accedé a la opción "Eliminar producto por ID", donde se te solicitará el ID del producto a borrar.
+6. La opción "Reporte por cantidad mínima" permite ingresar un límite de stock. El sistema mostrará un listado con todos los productos cuyo stock sea menor o igual al número ingresado, incluyendo su ID, nombre y categoría.
 
 ## Lógica de Funcionamiento
-1. main.py – Menú Principal:
-* Muestra un menú con 3 opciones:
-* Gestionar Clientes
-* Gestionar Productos
-* Salir
-- Usa match para dirigir según la opción ingresada.
-- Cada opción llama a una función del módulo correspondiente.
 
-### 2. clientes.py
-### Funciones principales:
-    - agregar_cliente_sql(): Pide nombre, apellido, email, guarda en DB.
-    - ver_clientes_sql(): Muestra todos los clientes registrados.
-    - buscar_cliente_por__id_(): Busca por id .
-    - eliminar_cliente_por_id(): Elimina el cliente por id.
+1. `main.py`
+*  Presenta el menú principal con opciones para Clientes, Productos o Salir.
+*  Redirige al módulo correspondiente usando match.
 
-### Validaciones:
-- Se valida que los campos no estén vacíos y que el email sea válido.
-- Uso de datetime para guardar la fecha de registro.
-3. productos.py
-### Funciones principales:
-- agregar_producto_sql(): Crea un nuevo producto con nombre, precio, stock y categoría.
-- consultar_productos_sql(): Lista todos los productos disponibles.
-- buscar_producto_por_id(): Busca un producto por su ID.
-- actualizar_producto_sql(): Permite modificar nombre, precio o stock.
-- eliminar_producto_sql(): Elimina producto por ID.
-- reporte_stock_bajo(): Muestra productos con stock bajo un límite ingresado.
+2. 👥 `clientes.py`
+**Funciones:**
+* `agregar_cliente_sql()`: Alta en BD.
+* `ver_clientes_sql()`: Muestra clientes.
+* `buscar_cliente_por_id()`
+* `eliminar_cliente_por_id()`
 
-### Validaciones:
-* Se valida que el precio sea un número positivo.
-* El stock no puede ser negativo.
-* Se verifica que la categoría seleccionada exista.
+**Validaciones:**
+* Campos obligatorios.
+* Email válido.
+* Fecha con `datetime`.
+
+📦 `productos.py`
+**Funciones:**
+* `agregar_producto_sql()`
+* `consultar_productos_sql()`
+* `buscar_producto_por_id()`
+* `actualizar_producto_sql()`
+* `eliminar_producto_sql()`
+* `reporte_stock_bajo()`
+**Validaciones:**
+Precio y stock positivos.
+Categoría existente.
 
 ## 💾Base de Datos
-
-Nombre del archivo: libreria_reg.db
-*Tablas:*
-clientes
+Archivo: `libreria_reg.db`
+```
+-- clientes
 CREATE TABLE IF NOT EXISTS clientes (
     cliente_id INTEGER PRIMARY KEY AUTOINCREMENT,
     nombre TEXT NOT NULL,
@@ -89,7 +88,7 @@ CREATE TABLE IF NOT EXISTS clientes (
     fecha_registro TEXT NOT NULL
 );
 
-productos
+-- productos
 CREATE TABLE IF NOT EXISTS productos (
     producto_id INTEGER PRIMARY KEY AUTOINCREMENT,
     nombre TEXT NOT NULL,
@@ -99,54 +98,59 @@ CREATE TABLE IF NOT EXISTS productos (
     FOREIGN KEY (categoria_id) REFERENCES categorias(categoria_id)
 );
 
-categorias
+-- categorias
 CREATE TABLE IF NOT EXISTS categorias (
     categoria_id INTEGER PRIMARY KEY AUTOINCREMENT,
     nombre TEXT NOT NULL
 );
+```
 
 ## Ejemplo de Uso
 ### 📋 MENÚ PRINCIPAL
 1. Gestionar Clientes
 2. Gestionar Productos
 3. Salir
-
 Selecciona una opción (1-3): 2
 
-📦 Menú Productos
+### 📦 Menú Productos
 1. Agregar producto
 2. Ver productos
 ...
+6. Reporte por cantidad mínima
 Selecciona una opción (1-7): 6
 📉 Ingresá el límite de stock: 5
-
 ➡️ Muestra todos los productos con stock menor o igual a 5
 
-## 🐞 Errores Comunes y Solución
+## 🐞 Errores Comunes 
+
 |    Error           |    Causa               |       Solución                       |
 | -------------------| -----------------------| ------------------------------------ |
-| `AttributeError:   | Nombre de función mal  | Revisar nombres exactos              |
-|  module has no     | llamado.               |  en el archivo py                    |
-|  attribute`        |                        |                                      |
+| `AttributeError:`  | Nombre de función mal  | Revisar nombres exactos              |
+|  `module has no`   | llamado.               |  en el archivo py                    |
+|  `attribute`       |                        |                                      |
+| -------------------|-------------------     |------------------------------------- |
 | `sqlite3.Operation`| El alias o nombre de   | Verificar nombres reales en la       |
 | `alError: no such` | columna/tablas         | base de datos                        |
 | `column`           |                        |                                      |
+|------------------- |------------------------|------------------------------------- |
 
 
-## ✅ Próximas Mejoras
+## ✅ Mejoras futuras
 
 - Agregar interfaz gráfica (Tkinter o PyQt).
 - Conexión con API REST.
 - Exportar reportes a CSV o Excel.
 
-## 📌 Consideraciones
+## 🔎 Consideraciones
 
-- El módulo se inicializa con init(autoreset=True) para usar colorama en la consola.
-- Los datos también pueden persistirse en JSON como respaldo externo.
-- Las operaciones muestran mensajes amigables con íconos (como ✅, ❌, 📢).
+- Se usa `init(autoreset=True)` para usar `colorama` en la consola.
+- Los datos también pueden persistirse en archivo `.json` como respaldo externo.
+- Se incorporan íconos en consola para mejor experiencia (como ✅, ❌, 📢).
 
 ## 🙌 Agradecimientos
 
-Quiero agradecer especialmente a la profesora Griselda por su dedicación y guía constante a lo largo del curso, y a la tutora Erica, por su acompañamiento paciente y siempre estar dispuesta a ayudar.
+Quiero agradecer especialmente a la profesora Griselda por su dedicación y guía constante a lo largo del curso, y a la tutora Erica, por su acompañamiento atento y paciente en cada consulta.
+Este proyecto fue realizado como parte de mi formación en el curso de Python. Cada línea de código representa horas de práctica, errores y aprendizajes que hoy forman parte de mi crecimiento en el mundo de la programación.
 
-Este proyecto fue realizado como parte de mi formación y cada línea de código refleja el aprendizaje compartido en clase. ¡Gracias por motivarnos a seguir creciendo!
+
+
