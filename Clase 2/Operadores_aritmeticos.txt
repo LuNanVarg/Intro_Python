@@ -1,0 +1,7 @@
+
+Operadores aritmeticos en python por orden de jerarquía
+    parentesis
+    potencias(**), raices
+    divisiones(/), multiplicaciones(*), modulo(%), division entera (//)
+    sumas(+), restas(-)
+    

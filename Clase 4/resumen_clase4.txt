@@ -1,0 +1,49 @@
+
+Algoritmo:
+Partes:	Entrada
+	Proceso
+	Salida
+Carsterísticas:
+	Determinismo
+	Preciso
+	Finitud
+Representación:
+	Diagrama de flujo
+	Pseucodigo (PSeInt)
+	Código (Python)
+
+Datos primitivos Simples
+	Datos numéricos (enteros y reales)
+	Datos Alfanumericos (string)
+	Datos booleanos (True o False)
+
+Identificadores, variables y constantes
+	nombre = 'Romina' #operador asignacion
+	Tipos de variables:	
+		* Trabajo, temporales
+		* contadoras
+		* acumuladores
+		* banderas
+
+Instrucciones
+	print()
+	asignacion: operador =
+	input()
+	type()
+
+Conversión de datos
+	str -> int
+	str -> float
+	float -> str
+	int -> str
+	float -> int
+	int -> float
+format string (presentacion de la informacion)
+caracteres de escape (tabulador, salto de linea, escape)
+
+
+
+
+
+
+
