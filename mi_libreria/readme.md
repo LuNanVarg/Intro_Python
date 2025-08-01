@@ -135,11 +135,10 @@ Selecciona una opción (1-7): 6
 | `AttributeError:`  | Nombre de función mal  | Revisar nombres exactos              |
 |  `module has no`   | llamado.               |  en el archivo py                    |
 |  `attribute`       |                        |                                      |
-| -------------------|-------------------     |------------------------------------- |
 | `sqlite3.Operation`| El alias o nombre de   | Verificar nombres reales en la       |
 | `alError: no such` | columna/tablas         | base de datos                        |
 | `column`           |                        |                                      |
-|------------------- |------------------------|------------------------------------- |
+
 
 
 ## ✅ Mejoras futuras
