@@ -1,0 +1,9 @@
+loader:
+  type: python
+  search_path: ["."]
+  modules: ["productos", "clientes", "main", "conexion", "conf"]
+
+renderer:
+  type: html
+  template_directory: null  # Usa el template por defecto
+  output_directory: site    # Carpeta donde se generará el HTML
