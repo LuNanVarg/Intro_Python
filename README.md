@@ -1,71 +1,164 @@
-# 👩‍💻 Iniciación a la Programación con Python - Talento Tech
-### 🧠 Contenidos Mínimos
+# 🐍 Iniciación con Python - Talento Tech
 
-Este curso está diseñado de forma progresiva, comenzando por los fundamentos básicos de la programación hasta llegar a la aplicación práctica en proyectos más complejos.
+Este repositorio contiene ejercicios, prácticas y un proyecto final desarrollados a lo largo del curso introductorio de Python. Cada archivo y carpeta refleja el proceso de aprendizaje, la resolución de problemas y la aplicación progresiva de conceptos clave de la programación. 
 
+---
 ## 📚 Temas Principales
-### 🐍 Fundamentos de Programación con Python
 
-Introducción a los conceptos básicos de algoritmos y estructuras de programación.
-Se trabaja con:
+- 🐍 Fundamentos de Python: variables, tipos de datos, operadores
+- 🔁 Control de flujo: `if`, `for`, `while`
+- 📋 Estructuras de datos: listas, diccionarios, tuplas, cadenas
+- 🧩 Funciones y modularización
+- 🗃️ Archivos JSON y persistencia de datos
+- 🛢️ Introducción a bases de datos relacionales (SQLite)
+- 🚀 Proyecto integrador final
 
-    Sintaxis de Python
+---
 
-    Variables y operadores
+## ✅ Estructura del aprendizaje 
+```
+Intro_Python/
+│
+├── 🐍 Fundamentos de Programación
+│   ├── Concepto de algoritmo
+│   ├── Entrada / Proceso / Salida
+│   ├── Variables y tipos de datos
+│   └── Operadores
+│
+├── 🔁 Estructuras de Control
+│   ├── Condicionales (if, elif, else, match)
+│   ├── Bucles (while, for)
+│   ├── Acumuladores y contadores
+│   └── Uso de break y continue
+│
+├── 📋 Estructuras de Datos
+│   ├── Cadenas
+│   ├── Listas
+│   ├── Tuplas
+│   └── Diccionarios
+│
+├── 🧩 Funciones y Modularización
+│   ├── Definición de funciones
+│   ├── Parámetros y retorno
+│   ├── Alcance de variables
+│   └── División del código en módulos
+│
+├── 💾 Archivos y Persistencia
+│   ├── Manejo de archivos .txt
+│   ├── Uso de archivos .json
+│   ├── Estructuras de datos persistentes
+│   └── Manejo de errores (try-except)
+│
+├── 🗃️ Bases de Datos y SQL
+│   ├── Introducción a SQLite
+│   ├── Conexión desde Python
+│   ├── Consultas SQL básicas (CRUD)
+│   └── Integración con estructuras Python
+│
+└── 🚀 Proyecto Final Integrador
+    ├── Desarrollo de aplicación en consola
+    ├── Gestión de productos y clientes
+    ├── Uso de archivos y base de datos
+    └── Documentación y presentación
 
-    Estructuras de control de flujo (if, for, while)
+```
 
-### 📦 Estructuras de Datos
+---
 
-Aprendizaje del manejo de:
+## ⚙️ Funcionalidades
 
-    Cadenas de texto
+- 📦 Gestión de productos con SQLite
+- 👥 Gestión de clientes con archivo JSON
+- 🧩 Menús interactivos por consola
+- ✅ Validaciones de entrada
+- 🎨 Interfaz con colores (Colorama)
+- 📁 Separación en módulos (`clientes.py`, `productos.py`, `main.py`)
 
-    Listas 📋
+---
 
-    Tuplas 🔗
+## ▶️ Cómo ejecutar
 
-    Diccionarios 🔐
+**1. Cloná el repositorio:**
+bash
+```
+git clone https://github.com/LuNanVarg/Intro_Python.git
+cd Intro_Python
+```
+**2. Ejecutá el archivo principal:**
+   ```python main.py```
 
-Uso de métodos esenciales y estrategias para organizar y gestionar datos de manera eficiente.
+---
+## 💾 Requisitos
 
-### 🧩 Funciones y Modularidad
+* Python 3.11 o superior
+* Módulos externos:
+    * ```colorama```
 
-    Definición y uso de funciones
+**Instalación:**
 
-    Parámetros y valores de retorno
+```pip install colorama```
 
-    Alcance de variables
-    Se introduce la modularización para organizar y reutilizar el código, promoviendo buenas prácticas de programación.
+---
+## 📌 Notas
 
-### 🗃️ Introducción a Bases de Datos y SQL
+* Este proyecto forma parte de mi formación práctica en Python.
+* Fue realizado con el objetivo de integrar archivos JSON, SQL y estructuras de control.
+* Cada función fue probada y mejorada durante el proceso de aprendizaje, clase a clase .
+* Organizado en carpetas para facilitar la lectura y presentación.
 
-    Fundamentos de bases de datos relacionales
+---
+## 🙌 Agradecimientos
 
-    Lenguaje SQL básico
-    Creación de aplicaciones que integren estructuras de datos y consultas SQL usando SQLite y Python.
+Gracias al equipo docente **( profe Griselda y a la tutora Erica)** y a mis compañeros del curso por acompañarme en este camino.
+Cada línea de código representa horas de práctica, errores y aprendizajes que hoy forman parte de mi crecimiento en el mundo de la programación.
+Este proyecto es también un reflejo de mi compromiso con seguir aprendiendo y superándome.
 
-### 🚀 Desarrollo de Proyecto Final
+---
 
-Aplicación de todos los conocimientos en una solución práctica que combine:
+## <picture> <img src="https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/Connect-with-me.gif?raw=true" width="100px"> </picture> 👩‍💻 Autor
+<p align="center">
+	<a href="mailto:nancy.vargas.it@gmail.com"><img src="https://img.icons8.com/bubbles/50/000000/gmail.png" alt="Gmail"/></a>
+	<a href="https://github.com/LuNanVarg"><img src="https://img.icons8.com/bubbles/50/000000/github.png" alt="GitHub"/></a>
+	<a href="https://linkedin.com/in/vargasnancy"><img src="https://img.icons8.com/bubbles/50/000000/linkedin.png" alt="LinkedIn"/></a>
+	
+</p>
 
-    Lógica de programación
+---
 
-    Estructuras de datos
+## 🚀 En desarrollo
 
-    Manejo de bases de datos
-    Incluye documentación y presentación del proyecto como evidencia del aprendizaje.
+* ✍️ Validaciones más robustas
+* 📊 Reportes personalizados
+* 🌐 Versión con interfaz gráfica (próximamente)
+  
+---
 
-### 🏁 Resultados de Aprendizaje
+## 🛠️ Próximos pasos
 
-Al finalizar el curso, los estudiantes serán capaces de:
+- Explorar Python orientado a objetos
+- Probar frameworks como Flask o Tkinter
+- Conectar Python con interfaces gráficas y web
 
-✅ Escribir y ejecutar programas simples en Python
-✅ Aplicar estructuras de control para decisiones y repeticiones
-✅ Dividir tareas complejas usando funciones propias
-✅ Utilizar buenas prácticas de programación (modularidad, depuración, mantenibilidad)
-✅ Manipular datos con listas, diccionarios y bases de datos SQLite
-✅ Crear y gestionar bases de datos con SQL básico
-✅ Desarrollar pequeñas aplicaciones prácticas integrando todo lo aprendido
+---
 
-💡 El curso culmina con un proyecto integrador, demostrando una base sólida para continuar formándose en programación y desarrollo de software.
+🏁 Resultados de Aprendizaje
+
+Al finalizar el curso, ya somos capaces de:
+
+* ✅ Escribir y ejecutar programas simples en Python
+
+* ✅ Aplicar estructuras de control para decisiones y repeticiones
+
+* ✅ Dividir tareas complejas usando funciones propias
+
+* ✅ Utilizar buenas prácticas de programación (modularidad, depuración, mantenibilidad)
+
+* ✅ Manipular datos con listas, diccionarios y bases de datos SQLite
+
+* ✅ Crear y gestionar bases de datos con SQL básico
+
+* ✅ Desarrollar pequeñas aplicaciones prácticas integrando todo lo aprendido
+
+💡 El curso culminó con un proyecto integrador, demostrando una base sólida para continuar formándonos en programación y desarrollo de software.
+
+---
