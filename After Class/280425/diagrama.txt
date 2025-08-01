@@ -1,0 +1,19 @@
++--------------------------------------+
+|         Pedir ingreso de dato        |
++--------------------------------------+
+                ↓
+    ¿El dato es válido? (condición)
+            /         \
+          Sí           No
+          ↓             ↓
++----------------+  +---------------------------+
+| Procesar dato  |  | Mostrar mensaje de error   |
++----------------+  +---------------------------+
+          ↓                     ↓
+      Fin del ciclo       Volver a pedir dato
+
+1. Pedir usuario y pass
+  usar contador
+2. while contador!= 3
+    usuario == user y pass == password
+3. procesamos
