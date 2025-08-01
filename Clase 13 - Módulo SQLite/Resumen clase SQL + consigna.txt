@@ -1,0 +1,61 @@
+Base de datos
+DBMS(Sistema Gestor de Base de Datos)- MySQL, MS Sql Server, SQLite
+SQL Lenguaje
+Tabla -> entidades
+Registros
+Campo/Columna
+
+clientes = [
+	{"id": 1, "nombre": 'Ana', "apellido": 'Lopez'},
+	{"id": 2, "nombre": 'Luis', "apellido": 'Meza'}
+]
+
+personas - personaId, dni, nombre, apellido, email, direccion, telefono
+
+clientes -> id: integer, clave
+	,nombre: txt, apellido: txt, email:txt, fecha_registro:date
+
+elegir cliente donde el id = 2
+
+Operaciones
+C Create Insertar
+R Read Select Consultar
+U Update Modificar
+D Delete Eliminar
+--Crear tabla
+CREATE TABLE "clientes" (
+	"clienteId"	INTEGER NOT NULL UNIQUE,
+	"nombre"	TEXT NOT NULL,
+	"apellido"	TEXT NOT NULL,
+	"email"	TEXT NOT NULL,
+	"fecha_registro"	TEXT NOT NULL,
+	PRIMARY KEY("clienteId" AUTOINCREMENT)
+);
+--insertar registro
+INSERT INTO Clientes(nombre, apellido, email, fecha_registro)
+VALUES('Luis', 'Meza','lmeza@gmail.com', '18-06-2025')
+
+--update
+UPDATE clientes
+SET nombre = 'María'
+WHERE clienteId = 3
+
+--delete
+DELETE FROM clientes
+WHERE clienteId = 4
+
+Requerimientos
+
+Base de datos: Crear una base de datos llamada 'inventario.db' para almacenar los datos de los productos. La tabla 'productos' debe contener las siguientes columnas:
+
+'id': Identificador único del producto (clave primaria, autoincremental).
+
+'nombre': Nombre del producto (texto, no nulo).
+
+'descripcion': Breve descripción del producto (texto).
+
+'cantidad': Cantidad disponible del producto (entero, no nulo).
+
+'precio': Precio del producto (real, no nulo).
+
+'categoria': Categoría a la que pertenece el producto (texto).
