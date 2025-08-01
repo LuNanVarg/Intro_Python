@@ -1,6 +1,6 @@
 # 🐍 Iniciación con Python - Talento Tech
 
-Este repositorio contiene ejercicios, prácticas y un proyecto final desarrollados a lo largo del curso introductorio de Python. Cada archivo y carpeta refleja el proceso de aprendizaje, la resolución de problemas y la aplicación progresiva de conceptos clave de la programación. 
+Este repositorio contiene ejercicios, prácticas y un proyecto final desarrollados a lo largo del curso inicial con Python de la comisión 25009. Cada archivo y carpeta refleja el proceso de aprendizaje, la resolución de problemas y la aplicación progresiva de conceptos clave de la programación. 
 
 ---
 ## 📚 Temas Principales
@@ -65,14 +65,47 @@ Intro_Python/
 
 ---
 
+## 🧰 Herramientas y tecnologías utilizadas
+
+<p align="center">
+  &emsp;
+  <a href="#"><img alt="Python" src="https://img.shields.io/badge/Python-3776AB.svg?style=plastic&logo=python&logoColor=white"></a>
+  &emsp;
+  <a href="#"><img alt="SQLite" src="https://img.shields.io/badge/SQLite-07405E.svg?style=plastic&logo=sqlite&logoColor=white"></a>
+  &emsp;
+  <a href="#"><img alt="JSON" src="https://img.shields.io/badge/JSON-000000.svg?style=plastic&logo=json&logoColor=white"></a>
+  &emsp;
+  <a href="#"><img alt="Visual Studio Code" src="https://img.shields.io/badge/VSCode-0078d7.svg?style=plastic&logo=visual-studio-code&logoColor=white"></a>
+  &emsp;
+  <a href="#"><img alt="Git" src="https://img.shields.io/badge/Git-F05033.svg?style=plastic&logo=git&logoColor=white"></a>
+  &emsp;
+  <a href="#"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-181717.svg?style=plastic&logo=github&logoColor=white"></a>
+  &emsp;
+  <a href="#"><img alt="Colorama" src="https://img.shields.io/badge/Colorama-FFD43B.svg?style=plastic&logo=python&logoColor=black"></a>
+</p>
+
+---
+
 ## ⚙️ Funcionalidades
 
-- 📦 Gestión de productos con SQLite
-- 👥 Gestión de clientes con archivo JSON
-- 🧩 Menús interactivos por consola
-- ✅ Validaciones de entrada
-- 🎨 Interfaz con colores (Colorama)
-- 📁 Separación en módulos (`clientes.py`, `productos.py`, `main.py`)
+Este proyecto fue desarrollado utilizando diversas herramientas y tecnologías:
+
+- 🐍 **Python**: lenguaje principal del proyecto  
+- 💾 **SQLite**: base de datos relacional utilizada para la gestión de productos  
+- 📂 **JSON**: para la persistencia de datos de clientes  
+- 🎨 **Colorama**: librería usada para agregar colores en la interfaz de consola  
+- 🧰 **Visual Studio Code**: editor de código principal utilizado durante el desarrollo  
+- 🔧 **Git y GitHub**: para control de versiones y colaboración
+
+**Funcionalidades implementadas:**
+
+- 📦 Gestión de productos con SQLite  
+- 👥 Gestión de clientes con archivo JSON  
+- 🧩 Menús interactivos por consola  
+- ✅ Validaciones de entrada  
+- 🎨 Interfaz con colores (Colorama)  
+- 📁 Separación en módulos, ejemplos:(`clientes.py`, `productos.py`, `main.py`)
+
 
 ---
 
