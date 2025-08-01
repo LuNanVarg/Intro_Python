@@ -1,5 +1,4 @@
 # main.py
-# libreria_crud/main.py
 import clientes
 import productos
 from colorama import Fore, init
@@ -12,12 +11,7 @@ productos.inicializar_db()
 # Cargamos los clientes desde el archivo JSON (opcional)
 clientes_lista = clientes.cargar_clientes_json()
 
-def menu_principal():
-    print(Fore.CYAN + "\n📋 MENÚ PRINCIPAL")
-    print("1. Gestionar Clientes")
-    print("2. Gestionar Productos")
-    print("3. Salir")
-
+# Clientes
 def gestionar_clientes():
     while True:
         print(Fore.MAGENTA + "\n👥 Menú Clientes")
@@ -42,6 +36,7 @@ def gestionar_clientes():
         else:
             print(Fore.RED + "❌ Opción no válida.")
 
+# Productos
 def gestionar_productos():
     while True:
         print(Fore.YELLOW + "\n📦 Menú Productos")
