@@ -170,7 +170,7 @@ Este proyecto es también un reflejo de mi compromiso con seguir aprendiendo y s
 
 ---
 
-## <img src="https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/Connect-with-me.gif?raw=true" width="100px"> </picture> 👩‍💻 Autor
+## <img src="https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/Connect-with-me.gif?raw=true" width="100px"> </picture> 👩‍💻 Autor Nancy Vargas
 <p align="center">
 	<a href="mailto:nancy.vargas.it@gmail.com"><img src="https://img.icons8.com/bubbles/50/000000/gmail.png" alt="Gmail"/></a>
 	<a href="https://github.com/LuNanVarg"><img src="https://img.icons8.com/bubbles/50/000000/github.png" alt="GitHub"/></a>
